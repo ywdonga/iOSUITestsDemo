@@ -64,22 +64,7 @@ static NSInteger loginIndex = 0;//当前登录账号的下标
 
 - (void)testExample{
     //整体测试
-    [self allTestExample];
-    
-    
-    XCUIApplication *app = [[XCUIApplication alloc] init];
-    [app.icons[@"iOSUITests"] swipeDown];
-    
-    [app.buttons[@"Second"] tap];
-    [app.switches[@"switch1"] tap];
-    [app.steppers.buttons[@"Increment"] tap];
-    
-    XCUIElementQuery *tabBarsQuery = app.tabBars;
-    [tabBarsQuery.buttons[@"资讯"] tap];
-    [tabBarsQuery.buttons[@"我的"] tap];
-    [app.tables.buttons[@"退出登陆"] tap];
-    [app.alerts.buttons[@"确定"] tap];
-    
+    [self allTestExample];    
 }
 
 /** 整体测试 */
